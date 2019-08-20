@@ -1,0 +1,23 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+	int n,m,p;
+		int i=1;
+	cin>>n;
+	int patlu=n/2;
+	int motu=n/2;
+    for(i=1;i<=n;i++)
+    {
+        p=patlu-i;
+        m=motu-2i;
+        n=n-(p+m);
+        if(p || m == 0)
+        {
+            int min=min(p,m);
+            cout<<min;
+        }
+    }
+}
+
