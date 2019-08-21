@@ -1,0 +1,38 @@
+
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    
+    int A=0,B=7;
+    int t;
+    cin>>t;
+    while(t--)
+    { 
+        int N;
+        cin>>N;
+        int diffA=max((A-N),(N-A));
+        int diffB=max((B-N),(N-B));
+        
+        if(diffA < diffB)
+        {
+            A=diffA;
+            cout<<"A"<<endl;
+        }
+        else if(diffA > diffB)
+        {
+            B=diffB;
+            cout<<"B"<<endl;
+        }
+        else
+        {
+            A=diffA;
+            cout<<"A"<<endl;
+        }
+    }
+
+    return 0;
+}
