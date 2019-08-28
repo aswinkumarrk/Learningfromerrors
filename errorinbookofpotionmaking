@@ -1,0 +1,41 @@
+
+// Sample code to perform I/O:
+
+#include <iostream>
+
+using namespace std;
+
+int main() {
+	string s;
+	cin>>s;
+	int sum=0;
+	if(s.length()==10)
+	{
+	    
+	    int a=1;
+	    for(int i=0;i<10;i++)
+	    {
+	        if(a<10)
+	        {
+	        sum=sum+(s[i]*a);
+	        a++;
+	        }
+	        
+	    }
+	    if(sum%11==0)
+	    {
+	        cout<<"Legal ISBN";
+	        return 0;
+	    }
+	}
+	else
+	{
+	    cout<<"Illegal ISBN";
+	    return 0;
+	}
+}
+
+// Warning: Printing unwanted or ill-formatted data to output will cause the test cases to fail
+
+
+// Write your code here
